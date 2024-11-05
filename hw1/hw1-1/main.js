@@ -1,4 +1,3 @@
-//first task
 
 let a = "hello";
 console.log(a);
@@ -12,5 +11,3 @@ let e = 10;
 console.log(e);
 let f = -999;
 console.log(f);
-
-

@@ -1,3 +1,4 @@
+
 let a = 100;
 console.log(typeof a, a);
 let b = '100';
