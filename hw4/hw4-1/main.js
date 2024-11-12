@@ -3,4 +3,5 @@ function square(aNum,bNum) {
     console.log(result);
     return result;
 }
+
 square(5, 11);
