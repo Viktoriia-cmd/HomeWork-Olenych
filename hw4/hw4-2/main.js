@@ -3,4 +3,5 @@ function areaCircle(radius) {
     console.log(result);
     return result;
 }
+
 areaCircle(4)
