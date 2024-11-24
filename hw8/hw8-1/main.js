@@ -22,11 +22,9 @@ function clone(obj) {
     throw new Error(`Error`)
 }
 
-const cloner =  {name: "Vika", age: 38 , skills: ['HTML', 'CSS'], greet: function () {console.log('my name is')},
-    foo: function (){console.log(`my skills is`)}};
+const cloner =  {name: "Vika", age: 38 , skills: ['HTML', 'CSS'], greet: function () {console.log('my name is', this.name)}, foo: function (){console.log(`my skills are`, this.skills)}};
 console.log(cloner);
 const cloned = clone(cloner);
-cloned.greet();
-cloned.foo();
+
 
 
