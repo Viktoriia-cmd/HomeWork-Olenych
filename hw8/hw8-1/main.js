@@ -8,7 +8,7 @@ function clone(obj) {
         for (let key in obj) {
             if (typeof obj[key] === "function") {
                 const funClone = obj[key].bind({});
-                functions.push(funClone, key);
+                functions.push({funClone, key});
             }
         }
         console.log(functions);
@@ -22,6 +22,11 @@ function clone(obj) {
     throw new Error(`Error`)
 }
 
-const cloner = clone( {name: "Vika", age: 38 , skills: ['HTML', 'CSS'], greet: function () {console.log(`my name is ${this.name}`)}, foo: function (){console.log(`my skills is ${this.skills}`)}});
+const cloner =  {name: "Vika", age: 38 , skills: ['HTML', 'CSS'], greet: function () {console.log('my name is')},
+    foo: function (){console.log(`my skills is`)}};
 console.log(cloner);
+const cloned = clone(cloner);
+cloned.greet();
+cloned.foo();
+
 
