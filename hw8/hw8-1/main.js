@@ -13,16 +13,16 @@ function clone(obj) {
         }
         console.log(functions);
         const cloneObj = JSON.parse(JSON.stringify(obj));
-        for (const item in functions) {
-            cloneObj[item.key] = item.funClone;
-        }
+
         console.log(cloneObj);
+        cloneObj [functions [0].key] = functions[0].funClone;
+        cloneObj [functions [1].key] = functions[1].funClone;
         return cloneObj
     }
     throw new Error(`Error`)
 }
 
-const cloner =  {name: "Vika", age: 38 , skills: ['HTML', 'CSS'], greet: function () {console.log('my name is', this.name)}, foo: function (){console.log(`my skills are`, this.skills)}};
+const cloner =  {name: "Vika", age: 38 , skills: ['HTML', 'CSS'], greet: function () {console.log('Hello')}, foo: function (){console.log(`bar`)}};
 console.log(cloner);
 const cloned = clone(cloner);
 
