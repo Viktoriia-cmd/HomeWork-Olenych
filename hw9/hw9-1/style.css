@@ -1,0 +1,23 @@
+* {
+    width: 75vw;
+    height: 50vh;
+    margin: 30px auto;
+    font-size: 26px;
+}
+.wrap{
+    background-color: rosybrown;
+    color: crimson;
+
+}
+.collapse {
+    background-color: silver;
+    color: aqua;
+}
+.alpha {
+    background-color: navajowhite;
+    color: blue;
+}
+.beta {
+    background-color: cornflowerblue;
+    color: lime;
+}
